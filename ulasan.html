@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Leather Craft - Kerajinan Kulit Asli Garut</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        /* Animasi muncul dari bawah */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fadeInUp {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        /* Stagger delays */
+        .delay-1 { animation-delay: 0.05s; }
+        .delay-2 { animation-delay: 0.12s; }
+        .delay-3 { animation-delay: 0.20s; }
+        .delay-4 { animation-delay: 0.28s; }
+    </style>
+</head>
+
+<body class="bg-white dark:bg-gray-900">
+    <header>
+        <nav class="flex flex-col lg:flex-row justify-between px-4 py-3">
+            <a class="text-amber-900 text-3xl font-bold">Creating Leather Craft</a>
+            <div class="flex flex-row justify-start items-center gap-4">
+                <a href="/index.html">Beranda</a>
+                <a href="/produk.html">Produk</a>
+                <a href="/ulasan.html" class="text-amber-900 font-bold">Ulasan</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="max-w-screen-xl mx-auto my-10 px-6">
+        <h1 class="text-center text-4xl text-gray-800 font-bold mb-8">Ulasan Pelanggan Kami</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Ulasan 1 -->
+            <div class="card group bg-white shadow-lg text-gray-800 rounded-xl p-5 transition duration-500 ease-in-out transform hover:scale-105 hover:bg-amber-800 hover:text-white cursor-pointer animate-fadeInUp delay-1">
+                <div class="flex items-center mb-4">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User 1" class="w-14 h-14 rounded-full mr-4">
+                    <div>
+                        <p class="font-bold group-hover:text-white">Rina Dimana Aja</p>
+                        <p class="text-amber-800 text-sm group-hover:text-yellow-300">★★★★★</p>
+                    </div>
+                </div>
+                <p class="text-sm leading-relaxed group-hover:text-white">
+                    Produk dari <span class="font-semibold">Creating Leather Craft</span> Awet banget!
+                    Saya pesan Dompet Pendek Pria sampai sekarang masih bagus dan makin mengkilap!
+                </p>
+            </div>
+
+            <!-- Ulasan 2 -->
+            <div class="card group bg-white shadow-lg text-gray-800 rounded-xl p-5 transition duration-500 ease-in-out transform hover:scale-105 hover:bg-amber-800 hover:text-white cursor-pointer animate-fadeInUp delay-2">
+                <div class="flex items-center mb-4">
+                    <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="User 2" class="w-14 h-14 rounded-full mr-4">
+                    <div>
+                        <p class="font-bold group-hover:text-white">Dimas Aduhay</p>
+                        <p class="text-amber-800 text-sm group-hover:text-yellow-300">★★★★☆</p>
+                    </div>
+                </div>
+                <p class="text-sm leading-relaxed group-hover:text-white">
+                    Produk cepat sampai dan masih Sama pas awal beli!
+                    Saya suka varian warna dan modelnya, cocok buat anak muda.
+                </p>
+            </div>
+
+            <!-- Ulasan 3 -->
+            <div class="card group bg-white shadow-lg text-gray-800 rounded-xl p-5 transition duration-500 ease-in-out transform hover:scale-105 hover:bg-amber-800 hover:text-white cursor-pointer animate-fadeInUp delay-3">
+                <div class="flex items-center mb-4">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User 3" class="w-14 h-14 rounded-full mr-4">
+                    <div>
+                        <p class="font-bold group-hover:text-white">Siti Maemunnah</p>
+                        <p class="text-amber-800 text-sm group-hover:text-yellow-300">★★★★★</p>
+                    </div>
+                </div>
+                <p class="text-sm leading-relaxed group-hover:text-white">
+                    Saya sudah langganan beli di <span class="font-semibold">Creating Leather Craft</span>.
+                    Kualitasnya konsisten, dan pelayanannya ramah banget.
+                    Cocok dijadikan oleh-oleh khas Garut.
+                </p>
+            </div>
+
+            <!-- Ulasan 4 -->
+            <div class="card group bg-white shadow-lg text-gray-800 rounded-xl p-5 transition duration-500 ease-in-out transform hover:scale-105 hover:bg-amber-800 hover:text-white cursor-pointer animate-fadeInUp delay-4">
+                <div class="flex items-center mb-4">
+                    <img src="https://randomuser.me/api/portraits/men/91.jpg" alt="User 4" class="w-14 h-14 rounded-full mr-4">
+                    <div>
+                        <p class="font-bold group-hover:text-white">Fajar Sadboy</p>
+                        <p class="text-amber-800 text-sm group-hover:text-yellow-300">★★★★★</p>
+                    </div>
+                </div>
+                <p class="text-sm leading-relaxed group-hover:text-white">
+                    Keren banget! Website-nya mudah digunakan,
+                    tampilan produk menarik, dan pengiriman super cepat.
+                    Pasti saya rekomendasikan ke teman-teman.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-white py-6 mt-10 bg-amber-900">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 px-6">
+            <div>
+                <h5 class="text-2xl font-bold">Creating Leather Craft</h5>
+                <p class="text-sm">Kerajinan kulit asli buatan tangan dari Garut.</p>
+                <ul class="mt-3 space y-2 text-sm">
+                    <p class="text-sm">Buka Linktr.ee ini untuk tau lebih banyak tentang kami!</p>
+                    <li><a href="https://linktr.ee/creatinglc">Linktree.creating</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-2xl font-bold">Navigasi</h5>
+                <ul class="mt-3 space-y-2 text-sm">
+                    <li><a href="/index.html">Beranda</a></li>
+                    <li><a href="/produk.html">Produk</a></li>
+                    <li><a href="/ulasan.html">Ulasan</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-2xl font-bold">Hubungi Kami</h5>
+                <ul class="text-sm">
+                    <li>0855-59335963</li>
+                    <li><a href="mailto:creatinglcofficial@gmail.com">creatinglcofficial@gmail.com</a></li>
+                    <li><a href="https://www.instagram.com/creating_lc">creating_lc</a></li>
+                    <li>Jl. Cempaka, Garut, Jawa Barat</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

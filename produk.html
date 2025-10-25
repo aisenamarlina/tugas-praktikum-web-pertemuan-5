@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creating Leather Craft - Kerajinan Kulit Asli Garut</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style>
+    /* Animasi muncul dari bawah */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-fadeInUp {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    /* Stagger delays */
+    .delay-1 { animation-delay: 0.05s; }
+    .delay-2 { animation-delay: 0.12s; }
+    .delay-3 { animation-delay: 0.20s; }
+    .delay-4 { animation-delay: 0.28s; }
+    .delay-5 { animation-delay: 0.36s; }
+    .delay-6 { animation-delay: 0.44s; }
+  </style>
+</head>
+
+<body class="bg-white dark:bg-gray-900">
+  <header>
+    <nav class="flex flex-col lg:flex-row justify-between px-4 py-3">
+      <a class="text-amber-900 text-3xl font-bold">Creating Leather Craft</a>
+      <div class="flex flex-row justify-start items-center gap-4">
+        <a href="/index.html">Beranda</a>
+        <a href="/produk.html" class="text-amber-900 font-bold">Produk</a>
+        <a href="/ulasan.html">Ulasan</a>
+      </div>
+    </nav>
+  </header>
+
+  <h1 class="text-center text-4xl text-gray-700 my-6 font-bold">Produk Unggulan Kulit</h1>
+
+  <div class="mx-auto max-w-screen-xl px-6">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-gray-800">
+
+      <div class="produk group bg-white shadow-lg text-gray-800 rounded-xl p-4 flex flex-col items-center transition duration-500 ease-in-out transform hover:scale-105 hover:bg-amber-800 hover:text-white cursor-pointer animate-fadeInUp delay-1">
+        <img src="https://assets.kompasiana.com/items/album/2025/10/19/dompetp-68f4b246ed64152b57732dd2.jpg?t=o&v=770"
+             alt="Dompet Panjang Pria"
+             class="rounded-lg mb-3 object-cover h-48 w-full">
+        <p class="font-semibold nama-produk transition duration-300 text-gray-800 group-hover:text-white group-hover:font-bold">Dompet Panjang Pria</p>
+        <p class="text-amber-800 font-bold transition duration-300 group-hover:text-white group-hover:font-bold">Rp200.000</p>
+      </div>
+
+      <div class="produk group bg-white shadow-lg text-gray-800 rounded-xl p-4 flex flex-col items-center transition duration-500 ease-in-out transform hover:scale-105 hover:bg-amber-800 hover:text-white cursor-pointer animate-fadeInUp delay-2">
+        <img src="https://assets.kompasiana.com/items/album/2025/10/19/dompppet-68f4b2a5ed64152e8c73adf2.jpg?t=o&v=770"
+             alt="Dompet Pendek Pria"
+             class="rounded-lg mb-3 object-cover h-48 w-full">
+        <p class="font-semibold nama-produk transition duration-300 text-gray-800 group-hover:text-white group-hover:font-bold">Dompet Pendek Pria</p>
+        <p class="text-amber-800 font-bold transition duration-300 group-hover:text-white group-hover:font-bold">Rp125.000</p>
+      </div>
+
+      <div class="produk group bg-white shadow-lg text-gray-800 rounded-xl p-4 flex flex-col items-center transition duration-500 ease-in-out transform hover:scale-105 hover:bg-amber-800 hover:text-white cursor-pointer animate-fadeInUp delay-3">
+        <img src="https://assets.kompasiana.com/items/album/2025/10/19/id-68f4b2f434777c3d8a5035a2.jpg?t=o&v=770"
+             alt="Id Card"
+             class="rounded-lg mb-3 object-cover h-48 w-full">
+        <p class="font-semibold nama-produk transition duration-300 text-gray-800 group-hover:text-white group-hover:font-bold">Id Card</p>
+        <p class="text-amber-800 font-bold transition duration-300 group-hover:text-white group-hover:font-bold">Rp100.000</p>
+      </div>
+
+      <div class="produk group bg-white shadow-lg text-gray-800 rounded-xl p-4 flex flex-col items-center transition duration-500 ease-in-out transform hover:scale-105 hover:bg-amber-800 hover:text-white cursor-pointer animate-fadeInUp delay-4">
+        <img src="https://assets.kompasiana.com/items/album/2025/10/19/dompettt-68f4b34934777c43a6172872.jpg?t=o&v=770"
+             alt="Gantungan Kunci STNK"
+             class="rounded-lg mb-3 object-cover h-48 w-full">
+        <p class="font-semibold nama-produk transition duration-300 text-gray-800 group-hover:text-white group-hover:font-bold">Ganci Tempat STNK</p>
+        <p class="text-amber-800 font-bold transition duration-300 group-hover:text-white group-hover:font-bold">Rp80.000</p>
+      </div>
+
+      <div class="produk group bg-white shadow-lg text-gray-800 rounded-xl p-4 flex flex-col items-center transition duration-500 ease-in-out transform hover:scale-105 hover:bg-amber-800 hover:text-white cursor-pointer animate-fadeInUp delay-5">
+        <img src="https://assets.kompasiana.com/items/album/2025/10/19/gantungann-68f4b51dc925c404b611bfc3.jpg?t=o&v=770"
+             alt="Gantungan Kunci"
+             class="rounded-lg mb-3 object-cover h-48 w-full">
+        <p class="font-semibold nama-produk transition duration-300 text-gray-800 group-hover:text-white group-hover:font-bold">Gantungan Kunci</p>
+        <p class="text-amber-800 font-bold transition duration-300 group-hover:text-white group-hover:font-bold">Rp100.000</p>
+      </div>
+
+      <div class="produk group bg-white shadow-lg text-gray-800 rounded-xl p-4 flex flex-col items-center transition duration-500 ease-in-out transform hover:scale-105 hover:bg-amber-800 hover:text-white cursor-pointer animate-fadeInUp delay-6">
+        <img src="https://assets.kompasiana.com/items/album/2025/10/19/dompetk-68f4b43ec925c47cd01e3082.jpg?t=o&v=770"
+             alt="Card Holder"
+             class="rounded-lg mb-3 object-cover h-48 w-full">
+        <p class="font-semibold nama-produk transition duration-300 text-gray-800 group-hover:text-white group-hover:font-bold">Card Holder</p>
+        <p class="text-amber-800 font-bold transition duration-300 group-hover:text-white group-hover:font-bold">Rp50.000</p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="text-white py-6 mt-10 bg-amber-900">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 px-6">
+      <div>
+        <h5 class="text-2xl font-bold">Creating Leather Craft</h5>
+        <p class="text-sm">Kerajinan kulit asli buatan tangan dari Garut.</p>
+        <ul class="mt-3 space y-2 text-sm">
+          <p class="text-sm">Buka Linktr.ee ini untuk tau lebih banyak tentang kami!</p>
+          <li><a href="https://linktr.ee/creatinglc">Linktree.creating</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-2xl font-bold">Navigasi</h5>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a href="/index.html">Beranda</a></li>
+          <li><a href="/produk.html">Produk</a></li>
+          <li><a href="/ulasan.html">Ulasan</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-2xl font-bold">Hubungi Kami</h5>
+        <ul class="text-sm">
+          <li>0855-59335963</li>
+          <li><a href="mailto:creatinglcofficial@gmail.com">creatinglcofficial@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/creating_lc">creating_lc</a></li>
+          <li>Jl. Cempaka, Garut, Jawa Barat</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
